@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muka Music — Celebrate Afro Music & Culture</title>
+  <title>Muka — Music, Productivity & More</title>
   <style>
     :root {
       --bg-color: #0b0b0f;
@@ -42,7 +42,11 @@
       left: -10%;
       width: 50vw;
       height: 50vw;
-      background: radial-gradient(circle, rgba(142, 45, 226, 0.15) 0%, transparent 70%);
+      background: radial-gradient(
+        circle,
+        rgba(142, 45, 226, 0.15) 0%,
+        transparent 70%
+      );
       z-index: -1;
       pointer-events: none;
     }
@@ -75,7 +79,11 @@
       font-size: 4rem;
       font-weight: 800;
       letter-spacing: -0.03em;
-      background: linear-gradient(135deg, #fff 30%, var(--accent-purple) 100%);
+      background: linear-gradient(
+        135deg,
+        #fff 30%,
+        var(--accent-purple) 100%
+      );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       margin-bottom: 1.5rem;
@@ -84,7 +92,7 @@
 
     header p {
       font-size: 1.25rem;
-      max-width: 680px;
+      max-width: 760px;
       color: var(--text-muted);
       margin-bottom: 2.5rem;
       animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s backwards;
@@ -109,7 +117,7 @@
       max-width: 1100px;
       margin: 0 auto;
       padding: 5rem 2rem;
-      animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) perspective(1px);
+      animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     h2 {
@@ -140,12 +148,12 @@
       color: var(--text-muted);
     }
 
-    .about-intro strong {
-      color: var(--text-main);
-    }
-
     .about-intro p {
       margin-bottom: 1.5rem;
+    }
+
+    .about-intro strong {
+      color: var(--text-main);
     }
 
     /* Features Grid */
@@ -204,25 +212,17 @@
       margin-bottom: 4rem;
     }
 
-    .screenshot-group h3 {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      color: var(--text-muted);
-      padding-left: 0.5rem;
-    }
-
     .screenshot-scroll {
       display: flex;
       gap: 1.5rem;
       overflow-x: auto;
       padding: 1rem 0.5rem 2rem 0.5rem;
       scroll-snap-type: x mandatory;
-      scrollbar-width: none; /* Hide scrollbar Firefox */
+      scrollbar-width: none;
     }
 
     .screenshot-scroll::-webkit-scrollbar {
-      display: none; /* Hide scrollbar Safari/Chrome */
+      display: none;
     }
 
     .screenshot-scroll img {
@@ -231,7 +231,7 @@
       border-radius: 24px;
       border: 4px solid var(--glass-border);
       background-color: #000;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -240,14 +240,8 @@
       box-shadow: 0 15px 40px rgba(142, 45, 226, 0.2);
     }
 
-    /* Custom sizing matching device aspect ratios */
     .iphone-scroller img {
       height: 480px;
-      width: auto;
-    }
-
-    .ipad-scroller img {
-      height: 400px;
       width: auto;
     }
 
@@ -268,7 +262,7 @@
     footer p:first-child {
       font-size: 1.15rem;
       color: var(--text-main);
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto 1.5rem auto;
     }
 
@@ -290,107 +284,174 @@
 
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      header h1 { font-size: 2.75rem; }
-      header p { font-size: 1.1rem; }
-      section { padding: 3rem 1.5rem; }
-      .iphone-scroller img { height: 380px; }
-      .ipad-scroller img { height: 280px; }
+      header h1 {
+        font-size: 2.75rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
+      section {
+        padding: 3rem 1.5rem;
+      }
+
+      .iphone-scroller img {
+        height: 380px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <h1>Muka Music</h1>
+    <h1>Muka</h1>
+
     <p>
-      Navigate authentic regional sounds from across Africa and the Caribbean with Muka Music —
-      your ultimate guide to global music.
+      Discover music alongside your essential daily tools.
+      Muka combines expert music curation with smart productivity —
+      from AI-powered playlists and task management to fitness tracking
+      and live weather updates, all in one sleek app.
     </p>
+
     <div class="badge-container">
-      <a href="https://apps.apple.com/us/app/black-music/id6636492722" target="_blank">
-        <img alt="Download on the App Store" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83">
+      <a
+        href="https://apps.apple.com/us/app/black-music/id6636492722"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          alt="Download on the App Store"
+          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
+        >
       </a>
     </div>
   </header>
 
   <section id="about">
-    <h2>About Muka Music</h2>
+    <h2>About Muka</h2>
+
     <div class="about-intro">
       <p>
-        Navigate authentic regional sounds from across Africa and the Caribbean with Muka Music.
-        Serving as your ultimate guide to global music, Muka bypasses generic algorithms with expert curation
-        and seamless Apple Music integration — making it effortless to uncover hidden gems and curate your perfect personal library.
+        Muka brings together <strong>music discovery and everyday productivity</strong>
+        in one beautifully designed experience. Bypassing generic algorithms,
+        Muka combines expert curation, AI-powered discovery, and seamless
+        Apple Music integration with practical tools designed to help you
+        get more from your day.
+      </p>
+
+      <p>
+        From finding your next favorite artist to organizing your schedule,
+        staying focused, tracking your activity, and checking the weather,
+        Muka puts the tools you use every day in one place.
       </p>
     </div>
 
     <h2>Key Features</h2>
+
     <div class="grid-container">
+
       <div class="grid-item">
-        <h3>🎯 Expert Curation</h3>
-        <p>Access exclusive playlists highlighting legendary icons and the next big stars.</p>
+        <h3>🎵 Curated Global Music</h3>
+        <p>
+          Access exclusive playlists, explore deep music stories,
+          and discover world-class tracks from across the globe.
+        </p>
       </div>
 
       <div class="grid-item">
-        <h3>🔍 Deep Discovery</h3>
-        <p>Uncover hidden gems and explore the rich stories behind the tracks you love.</p>
+        <h3>✨ AI Playlist Generation</h3>
+        <p>
+          Instantly create personalized playlists tailored to your
+          mood, taste, activity, or vibe.
+        </p>
       </div>
 
       <div class="grid-item">
-        <h3>🎵 Music Recognition</h3>
-        <p>Identify any song around you and instantly save it to your custom Muka-curated Apple Music playlists.</p>
+        <h3>🔍 Music Recognition</h3>
+        <p>
+          Identify songs playing around you and save them straight
+          to your Apple Music library.
+        </p>
       </div>
 
       <div class="grid-item">
-        <h3>📱 Seamless Access</h3>
-        <p>Add custom Home Screen widgets for one-tap access to your favorite sounds.</p>
+        <h3>📅 Tasks & Calendar</h3>
+        <p>
+          Organize your daily schedule, stay on top of to-dos,
+          and streamline your routine.
+        </p>
       </div>
 
       <div class="grid-item">
-        <h3>🎨 Elevated Design</h3>
-        <p>Enjoy a beautiful, intuitive interface built specifically for music lovers.</p>
+        <h3>🎯 Focus & Productivity</h3>
+        <p>
+          Block distracting apps and stay dialed in with dedicated
+          focus sessions designed to help you get things done.
+        </p>
       </div>
 
       <div class="grid-item">
-        <h3>⚙️ Your Music, Your Way</h3>
-        <p>Personalize your experience with settings tailored to your listening habits.</p>
+        <h3>🏃 Fitness & Step Tracking</h3>
+        <p>
+          Track your daily steps, monitor your activity, and stay
+          motivated to keep moving.
+        </p>
       </div>
+
+      <div class="grid-item">
+        <h3>☀️ Weather & Widgets</h3>
+        <p>
+          View live daily high and low forecasts and add customizable
+          Home Screen widgets for one-tap access to your favorite tools.
+        </p>
+      </div>
+
     </div>
 
-    <div class="notice-box">
-      <strong>Note:</strong> A subscription is required to access all content and features.
-    </div>
   </section>
 
   <section id="screenshots">
     <h2>App Screenshots</h2>
 
     <div class="screenshot-group">
-      <h3>📱 iPhone</h3>
       <div class="screenshot-scroll iphone-scroller">
-        <img alt="iPhone Screenshot 1" src="images/iphone1.jpg">
-        <img alt="iPhone Screenshot 2" src="images/iphone2.jpg">
-        <img alt="iPhone Screenshot 3" src="images/iphone3.jpg">
-      </div>
-    </div>
-
-    <div class="screenshot-group">
-      <h3>💻 iPad</h3>
-      <div class="screenshot-scroll ipad-scroller">
-        <img alt="iPad Screenshot 1" src="images/ipad1.png">
-        <img alt="iPad Screenshot 2" src="images/ipad2.png">
-        <img alt="iPad Screenshot 3" src="images/ipad3.jpg">
+        <img alt="Muka iPhone Screenshot 1" src="images/iphone1.jpg">
+        <img alt="Muka iPhone Screenshot 2" src="images/iphone2.jpg">
+        <img alt="Muka iPhone Screenshot 3" src="images/iphone3.jpg">
       </div>
     </div>
   </section>
 
   <footer>
-    <p>Join us in celebrating the artists and communities shaping the sound of today and tomorrow.</p>
-    <p>Contact: <a href="mailto:mukamusicapp@gmail.com">mukamusicapp@gmail.com</a></p>
+    <p>
+      Music, productivity, and the tools you need for your day —
+      all in one place.
+    </p>
+
+    <p>
+      Contact:
+      <a href="mailto:mukamusicapp@gmail.com">
+        mukamusicapp@gmail.com
+      </a>
+    </p>
+
     <div class="footer-links">
-      <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a></p>
+      <p>
+        <a
+          href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Terms of Use
+        </a>
+      </p>
     </div>
+
     <br>
-    <p>&copy; 2026 Muka Music. All rights reserved.</p>
+
+    <p>&copy; 2026 Muka. All rights reserved.</p>
   </footer>
 
 </body>
